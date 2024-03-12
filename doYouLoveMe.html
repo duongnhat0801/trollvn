@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Hate Me</title>
+    <style>
+        body {
+            background-image: url("https://techrum.vn/chevereto/images/2017/05/21/1tTOV.jpg");
+            height: 8px;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center" >
+    <h1> Do You Hate Me?</h1>
+    <button onmouseover="yes()" style="position: relative" id=yes>YES</button>
+    <button onclick="no()">NO</button>
+</div>
+<script>
+    function yes() {
+        document.getElementById('yes').style.top = Math.random() * window.innerHeight + "px"; //0-99
+        document.getElementById('yes').style.left= Math.random() * window.innerWidth +"px";
+    }
+    function no(){
+        alert("Hehe. I hate you")
+    }
+</script>
+</body>
+</html>

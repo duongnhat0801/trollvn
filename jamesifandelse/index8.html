@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 số thực</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type="text" id="c">
+<button onclick="kqua()">Kết quả</button>
+<script>
+    function kqua(){
+        if(a && b && c >0 && a + b > c || a+c >b || b+c>a){
+            let a= document.getElementById('a').value;
+            let b= document.getElementById('b').value;
+            let c= document.getElementById('c').value;
+            document.write(' a,b,c là ba cạnh của tam giác ')
+    }}
+</script>
+</body>
+</html>
