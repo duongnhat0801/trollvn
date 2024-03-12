@@ -11,21 +11,25 @@
         h1{
             color: aqua;
         }
+        button{
+        background: white;
+        color: black;
+        }
     </style>
 </head>
 <body>
-<div style="text-align: center" >
-    <h1> Do You Hate Me?</h1>
-    <button onmouseover="yes()" style="position: relative" id=yes>YES</button>
-    <button onclick="no()">NO</button>
+<div style="text-align: center">
+    <h1> Do You Love Me?</h1>
+    <button onclick="yes()" style="background: white" style="color: red" >YES</button>
+    <button onmouseover="no()" style="position: relative" id=yes>NO</button>
 </div>
 <script>
-    function yes() {
+    function no() {
         document.getElementById('yes').style.top = Math.random() * window.innerHeight + "px"; //0-99
         document.getElementById('yes').style.left= Math.random() * window.innerWidth +"px";
     }
-    function no(){
-        alert("Hehe. I hate you")
+    function yes(){
+        alert("Hehe. I love you")
     }
 </script>
 </body>
